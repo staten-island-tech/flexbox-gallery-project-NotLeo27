@@ -1,0 +1,13 @@
+body {
+    background-color: green;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap
+}
+
+.card {
+    width: 30%;
+    height: 50%;
+}
