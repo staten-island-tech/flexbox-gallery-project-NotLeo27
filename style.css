@@ -2,17 +2,66 @@ body {
     background-color: palegreen;
 }
 
+
 .flexbox {
     display: flex;
-    flex-flow: row wrap
+    flex-flow: column;
+    width: 20%;
+    gap: 20px;
+    align-items: center;
+}
+
+.card {
+    width: 500px;
+    height: auto;
+    background-color: darkgreen;
+    border-radius: 10px;
+    transition: .2s;
+    
 }
 
 .title {
     text-align: center
 }
 
-.card {
-    width: 30%;
-    height: 50%;
+.card:hover {
+    background-color: rgb(81, 179, 81);
+    transform: scale(1.05)
+}
+
+.card-back {
+    display: flex;
     background-color: white;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.card-back img {
+    width: 95%;
+}
+
+.card-description {
+    background-color: rgb(105, 201, 105);
+    border-radius: 15px;
+    margin: auto;
+    width: 95%;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+    color: white
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center
 }
