@@ -1,18 +1,66 @@
 body {
-    background-color: palegreen;
-}
-
-.flexbox {
-    display: flex;
-    flex-flow: row wrap
+    background-image: url("image.png");
+    background-repeat: repeat;
+    margin: 20px 20px 0px 20px
 }
 
 .title {
     text-align: center
 }
 
-.card {
-    width: 30%;
-    height: 50%;
-    background-color: white;
+
+@media screen and (min-width: 400px) {
+
+    .card {
+        width: 40vw;
+        height: 60vw;
+        background-color: rgb(57, 32, 6);
+        box-shadow: 10px 5px 5px yellow;
+        overflow: hidden;
+        max-width: 300px;
+        max-height: 450px;
+    }
+
+    .flexbox {
+        padding: 0;
+        margin: 0 auto; 
+        max-width: 1400px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px
+        
+    }
+
+
+}
+
+.card-back {
+    width: 95%;
+    height: 60%;
+    background-color: rgb(206, 152, 51);
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.card-description {
+    width: 95%;
+    height: 30%;
+    background-color: rgb(206, 152, 51);
+    margin: 0 auto;
+    margin-top: 3%;
+    border-radius: 10px;
+    font-family: "Sofadi One", system-ui;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center
+}
+
+.image {
+    margin: 0;
+    width: 95%;
+    height: 95%;
+
 }
