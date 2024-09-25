@@ -1,6 +1,6 @@
 body {
     background-image: url("image.png");
-    background-repeat: repeat;
+    background-size: cover;
     margin: 20px 20px 0px 20px
 }
 
@@ -17,8 +17,6 @@ body {
         background-color: rgb(57, 32, 6);
         box-shadow: 10px 5px 5px rgba(255,255,0,0.7);
         overflow: hidden;
-        max-width: 300px;
-        max-height: 450px;
     }
 
     .flexbox {
@@ -65,84 +63,28 @@ body {
     object-fit: contain;
 }
 
-.card:nth-child(1):hover {
-    scale: 1.1;
+.card:nth-child(1n):hover {
+    transform: scale(1.1);
     transition: 0.5s
 }
 
-.card:nth-child(2):hover {
+.card:nth-child(2n):hover {
     transform: rotateY(360deg);
     transition: 2.5s
 }
 
-.card:nth-child(3):hover {
+.card:nth-child(3n):hover {
     transform: translate(25px);
     transition: 0.5s;
 }
 
-.card:nth-child(4):hover {
-    scale: 0.9;
+.card:nth-child(4n):hover {
+    transform: scale(0.9);
     transition: 0.5s;
 }
 
-.card:nth-child(5):hover {
-    box-shadow: 20px 10px 10px rgba(255,255,0,1.5);
+.card:nth-child(5n):hover {
+    box-shadow: 20px 10px 10px rgba(255,255,0,1);
     transition: 1s
 }
-
-.card:nth-child(6):hover {
-    scale: 1.1;
-    transition: 0.5s
-}
-
-.card:nth-child(7):hover {
-    transform: rotateY(360deg);
-    transition: 2.5s
-}
-
-.card:nth-child(8):hover {
-    transform: translate(25px);
-    transition: 0.5s;
-}
-
-.card:nth-child(9):hover {
-    scale: 0.9;
-    transition: 0.5s;
-}
-
-.card:nth-child(10):hover {
-    box-shadow: 20px 10px 10px rgba(255,255,0,1.5);
-    transition: 1s
-}
-
-.card:nth-child(11):hover {
-    transform: rotateY(360deg);
-    transition: 2.5s
-}
-
-.card:nth-child(12):hover {
-    transform: rotateY(360deg);
-    transition: 2.5s
-}
-
-.card:nth-child(13):hover {
-    transform: translate(25px);
-    transition: 0.5s;
-}
-
-.card:nth-child(14):hover {
-    scale: 0.9;
-    transition: 0.5s;
-}
-
-.card:nth-child(15):hover {
-    box-shadow: 20px 10px 10px rgba(255,255,0,1.5);
-    transition: 1s
-}
-
-.card:nth-child(16):hover {
-    scale: 1.1;
-    transition: 0.5s;
-}
-
 
