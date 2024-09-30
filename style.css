@@ -11,14 +11,6 @@ body {
 
 @media screen and (min-width: 400px) {
 
-    .card {
-        width: 300px;
-        height: 450px;
-        background-color: rgb(57, 32, 6);
-        box-shadow: 10px 5px 5px rgba(255,255,0,0.7);
-        overflow: hidden;
-    }
-
     .flexbox {
         padding: 0;
         margin: 0 auto; 
@@ -31,36 +23,43 @@ body {
         
     }
 
+    .card {
+        width: 300px;
+        height: 450px;
+        background-color: rgb(57, 32, 6);
+        box-shadow: 10px 5px 5px rgba(255,255,0,0.7);
+        overflow: hidden;
+    }
 
-}
+    .card-back {
+        width: 95%;
+        height: 60%;
+        background-color: rgb(206, 152, 51);
+        margin: 0 auto;
+        margin-top: 5%;
+        border-radius: 10px;
+    }
+    
+    .card-description {
+        width: 95%;
+        height: 30%;
+        background-color: rgb(206, 152, 51);
+        margin: 0 auto;
+        margin-top: 3%;
+        border-radius: 10px;
+        font-family: "Sofadi One", system-ui;
+        font-size: 20px;
+        font-style: normal;
+        text-align: center
+    }
+    
+    .image {
+        margin: 0 auto;
+        width: 95%;
+        height: 95%;
+        object-fit: contain;
+    }
 
-.card-back {
-    width: 95%;
-    height: 60%;
-    background-color: rgb(206, 152, 51);
-    margin: 0 auto;
-    margin-top: 5%;
-    border-radius: 10px;
-}
-
-.card-description {
-    width: 95%;
-    height: 30%;
-    background-color: rgb(206, 152, 51);
-    margin: 0 auto;
-    margin-top: 3%;
-    border-radius: 10px;
-    font-family: "Sofadi One", system-ui;
-    font-size: 20px;
-    font-style: normal;
-    text-align: center
-}
-
-.image {
-    margin: 0 auto;
-    width: 95%;
-    height: 95%;
-    object-fit: contain;
 }
 
 .card:nth-child(1n):hover {
